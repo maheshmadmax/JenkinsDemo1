@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh ec2-user@172.31.36.196 <<EOF
+ssh localhost <<EOF
  cd ~/node-app
  git pull
  npm install — production
