@@ -1,9 +1,7 @@
-var expect  = require('chai').expect;
-var request = require('request');
+var assert = require('assert')
 
-it('Main page content', function(done) {
-    request('http://localhost:8085' , function(error, response, body) {
-        expect(body).to.equal('Hello World\n');
-        done();
-    });
-});
+function test() {
+  assert.equal(2 + 2, 4);
+}
+
+if (module == require.main) require('test').run(test);
