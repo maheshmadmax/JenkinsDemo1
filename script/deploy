@@ -1,8 +1,8 @@
 #!/bin/sh
-ssh centos@localhost <<EOF
+# ssh centos@localhost <<EOF
  cd ~/nodeapp
  git pull
  npm install — production
  pm2 restart all
  exit
-EOF
+# EOF
